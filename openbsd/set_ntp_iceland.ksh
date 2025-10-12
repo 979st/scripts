@@ -19,7 +19,6 @@ constraints from "https://www.cloudflare.com"
 constraints from "https://www.wikipedia.org"
 EOF
 
-rcctl set ntpd flags -s
 rcctl enable ntpd
 rcctl restart ntpd
 
