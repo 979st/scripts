@@ -8,9 +8,9 @@ if [[ "$(id -u)" -ne 0 ]]; then
 fi
 
 cat > /etc/ntpd.conf << 'EOF'
-server is.pool.ntp.org
-server ie.pool.ntp.org
-server dk.pool.ntp.org
+server de.pool.ntp.org
+server at.pool.ntp.org
+server nl.pool.ntp.org
 server time.apple.com
 server time.google.com
 server time.cloudflare.com
