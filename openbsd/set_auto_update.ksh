@@ -15,7 +15,7 @@ LOG_FILE="/var/log/auto_update.log"
 print "auto_update.ksh started $(date)" >> $LOG_FILE
 
 syspatch >> $LOG_FILE 2>&1
-pkg_add -Uu -I >> $LOG_FILE 2>&1
+pkg_add -Uu -I -v >> $LOG_FILE 2>&1
 fw_update >> $LOG_FILE 2>&1
 
 print "auto_update.ksh finished $(date)" >> $LOG_FILE
